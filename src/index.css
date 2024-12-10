@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.autobar_hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.linespaceing {
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .menubar {
+    font-size: 40px !important;
+  }
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 99999;
+  opacity: 1 !important;
+  background: rgba(255, 255, 255, 0.89) !important;
+  backdrop-filter: blur(8.5px) !important;
+  -webkit-backdrop-filter: blur(8.5px) !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fullscreen-overlay {
+  background: rgba(255, 255, 255) !important;
+}
+
+.bg {
+  background: url('data:image/svg+xml,<svg width="1728" height="729" viewBox="0 0 1728 729" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.63" x="-110" y="266.897" width="509" height="24" rx="12" transform="rotate(-31.2291 -110 266.897)" fill="%238ED2D0"/><rect opacity="0.63" x="-212.313" y="276.066" width="508" height="23" rx="11.5" transform="rotate(-31.2291 -212.313 276.066)" stroke="black"/><rect opacity="0.63" x="1529.69" y="699.066" width="508" height="23" rx="11.5" transform="rotate(-31.2291 1529.69 699.066)" stroke="black"/><rect opacity="0.63" x="1629.69" y="687.066" width="508" height="23" rx="11.5" transform="rotate(-31.2291 1629.69 687.066)" stroke="black"/><rect opacity="0.63" x="-210" y="278.897" width="509" height="24" rx="12" transform="rotate(-31.2291 -210 278.897)" fill="%238ED2D0"/><rect opacity="0.63" x="-112.313" y="264.066" width="508" height="23" rx="11.5" transform="rotate(-31.2291 -112.313 264.066)" stroke="black"/><rect opacity="0.63" x="1529" y="692.897" width="509" height="24" rx="12" transform="rotate(-31.2291 1529 692.897)" fill="%23F4714C"/><rect opacity="0.63" x="1629" y="680.897" width="509" height="24" rx="12" transform="rotate(-31.2291 1629 680.897)" fill="%23F4714C"/><path d="M141.268 380.396L120 401.036L147.016 412L141.268 380.396Z" fill="%23FDD7C9"/><path d="M625.834 223.024L637.33 194L654 219.154L625.834 223.024Z" fill="%23FDD7C9"/><path d="M589.268 697.396L568 718.036L595.016 729L589.268 697.396Z" fill="%23FDD7C9"/><path d="M1073.83 540.024L1085.33 511L1102 536.154L1073.83 540.024Z" fill="%23FDD7C9"/><path d="M1084.27 244.397L1063 265.036L1090.02 276L1084.27 244.397Z" fill="%23FDD7C9"/><path d="M1568.83 87.0242L1580.33 58.0005L1597 83.1543L1568.83 87.0242Z" fill="%23FDD7C9"/></svg>');
+  background-repeat: no-repeat;
+  height: 100dvh;
+  background-size: contain;
+}
+
+.card_shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.no-select {
+  user-select: none;
+  /* For modern browsers */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+}
+
+.loading-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.733);
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #ffffff;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+.fullscreen-overlay,
+.fullscreen-demo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  opacity: 1 !important;
+  background: rgba(255, 255, 255, 0.89) !important;
+  backdrop-filter: blur(8.5px) !important;
+  -webkit-backdrop-filter: blur(8.5px) !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fullscreen-overlay,
+.fullscreen-demo {
+  background: rgba(255, 255, 255) !important;
+}
+.fullscreen-demo {
+  background: rgba(0, 0, 0, 0.753) !important;
+}
+
+
+.fullscreen-demo {
+  overflow: scroll;
+}
+
+.fullscreen-demo::-webkit-scrollbar {
+  display: none;
+}
